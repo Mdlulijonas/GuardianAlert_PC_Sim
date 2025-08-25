@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build GuardianAlert",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "-o", "guardian_sim.exe",
+                "main.c",
+                "guardian.c", 
+                "hal_mock.c",
+                "-I.",
+                "-IC:/msys64/mingw64/include"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        }
+    ]
+}
