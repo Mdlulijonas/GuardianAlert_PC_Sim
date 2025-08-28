@@ -13,12 +13,6 @@ Files:
 Build (Linux/Mac):
     gcc -o guardian_sim src/main.c src/guardian.c src/hal_mock.c
 
-Build (Windows, with MinGW):
-    gcc -o guardian_sim.exe src/main.c src/guardian.c src/hal_mock.c
-
-Run:
-    ./guardian_sim   (Linux/Mac)
-    guardian_sim.exe (Windows)
 
 Expected Output:
     [GuardianAlert] Initializing...
